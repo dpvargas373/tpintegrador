@@ -1,0 +1,77 @@
+@layer navbar,
+banner, footer;
+
+@layer banner {
+    .banner__conteiner--size{
+        height: 60vh;
+    }
+
+    .banner__img--shadow{
+        filter: drop-shadow(2px 4px 6px black);
+        -webkit-filter: drop-shadow(2px 4px 6px black);
+    }
+
+    #banner>div>img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@layer navbar{
+    .navbar__logo--invert{
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+
+    nav div .navbar-nav a{
+        color:darkslategrey !important;
+    }
+
+    nav div .navbar-nav a:hover{
+        color:aliceblue !important;
+    }
+}
+
+#cards{
+    height: 100%;
+    object-fit: cover;
+}
+
+@layer footer{
+    footer {
+        font-size: 0.9rem;
+        
+        ;
+    }
+
+    footer a {
+        text-decoration: none !important;
+        color: darkslategray !important;
+    }
+    
+    footer a:hover {
+        color: aliceblue !important;
+        transform: scale(1.1);
+        transition: .5s all ;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transition: .5s all ;
+        -moz-transition: .5s all ;
+        -ms-transition: .5s all ;
+        -o-transition: .5s all ;
+}
+
+    footer div {
+        color: aliceblue;
+    }
+}
+#cards img{
+    height: 100%;
+    object-fit: cover;
+}
+
+nav div .navbar-nav .disabled{
+    color:rgb(62,98, 107) !important
+}
